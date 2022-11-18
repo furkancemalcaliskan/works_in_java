@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/dejkoveci"
+        tools:layout_editor_absoluteX="80dp"
         tools:layout_editor_absoluteY="60dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mauris eros. Integer in nunc ac elit dignissim elementum non sed orci. Nunc sit amet blandit purus, ac sagittis turpis. Fusce auctor nisl ultricies maximus sagittis. Maecenas finibus euismod commodo. Integer mattis vehicula nibh in tincidunt. Cras luctus ac ex quis euismod. Etiam quis rutrum neque, vel pellentesque nisi. Sed nec vulputate leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mauris eros. Integer in nunc ac elit dignissim elementum non sed orci. Nunc sit amet blandit purus, ac sagittis turpis. Fusce auctor nisl ultricies maximus sagittis. Maecenas finibus euismod commodo. Integer mattis vehicula nibh in tincidunt. Cras luctus ac ex quis euismod. Etiam quis rutrum neque, vel pellentesque nisi. Sed nec vulputate leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mauris eros. Integer in nunc ac elit dignissim elementum non sed orci. Nunc sit amet blandit purus, ac sagittis turpis. Fusce auctor nisl ultricies maximus sagittis. Maecenas finibus euismod commodo. Integer mattis vehicula nibh in tincidunt. Cras luctus ac ex quis euismod. Etiam quis rutrum neque, vel pellentesque nisi. Sed nec vulputate leo." />
+
+</LinearLayout>
